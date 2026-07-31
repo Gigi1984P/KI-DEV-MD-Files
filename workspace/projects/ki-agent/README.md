@@ -3,7 +3,7 @@ tags:
   - agent
   - core
   - index
-summary: "KI-Agent Identity & Configuration: Verhaltensregeln, Soul, User, Tools, Konfliktprüfung"
+summary: "KI-Agent Identity & Configuration: projektunabhängige Verhaltensregeln, Soul, User, Tools, Konfliktprüfung"
 read_when:
   - "Session boot"
   - "New agent initialization"
