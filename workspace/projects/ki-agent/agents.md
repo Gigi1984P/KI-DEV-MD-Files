@@ -8,6 +8,7 @@ read_when:
   - "Session boot"
   - "New agent initialization"
   - "Bootstrapping a workspace manually"
+  - "Before changing established patterns"
 ---
 
 # AGENTS.md - Your Workspace
@@ -63,6 +64,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+- **Before changing established patterns:** Check if a similar implementation already exists in `AI-EKOS/` — especially in `05-execution/rules/`, `07-patterns/`, or `08-recipes/`. Document your reasoning if you override them.
 
 ## External vs Internal
 
