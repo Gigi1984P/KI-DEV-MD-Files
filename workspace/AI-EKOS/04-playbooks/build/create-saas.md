@@ -1,3 +1,16 @@
+---
+tags:
+  - auth
+  - billing
+  - nextjs
+  - payments
+  - react
+  - stripe
+summary: "Create SaaS Playbook"
+read_when:
+  - "Running build operations"
+---
+
 # Create SaaS Playbook
 
 ## Objective

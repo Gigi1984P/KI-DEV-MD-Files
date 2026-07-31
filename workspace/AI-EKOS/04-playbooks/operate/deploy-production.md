@@ -1,3 +1,11 @@
+---
+tags:
+  - security
+summary: "Deploy to Production Playbook"
+read_when:
+  - "Running operate operations"
+---
+
 # Deploy to Production Playbook
 
 ## Objective

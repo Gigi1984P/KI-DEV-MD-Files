@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Project Kickoff"
+read_when:
+  - "Running sales operations"
+---
+
 # Project Kickoff
 
 ## Overview

@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - sql
+summary: "PostgreSQL Index Strategies"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # PostgreSQL Index Strategies
 
 ## Index Types

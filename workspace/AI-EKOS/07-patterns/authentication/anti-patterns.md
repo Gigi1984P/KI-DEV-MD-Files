@@ -1,3 +1,23 @@
+---
+tags:
+  - ai
+  - anti-patterns
+  - auth
+  - best-practices
+  - database
+  - embeddings
+  - nextjs
+  - performance
+  - postgres
+  - rag
+  - react
+  - sql
+summary: "Authentication Anti-Patterns"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Authentication Anti-Patterns
 
 ## 1. Storing Passwords in Plain Text

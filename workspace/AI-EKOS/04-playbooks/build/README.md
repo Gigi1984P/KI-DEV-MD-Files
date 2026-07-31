@@ -1,3 +1,19 @@
+---
+tags:
+  - ai
+  - ai-agents
+  - auth
+  - billing
+  - embeddings
+  - mcp
+  - payments
+  - rag
+  - stripe
+summary: "Build Playbooks"
+read_when:
+  - "Running build operations"
+---
+
 # Build Playbooks
 
 ## Purpose

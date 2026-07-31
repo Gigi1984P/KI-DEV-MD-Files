@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Authorization Architecture"
+read_when:
+  - "Designing authorization architecture"
+  - "Reviewing authorization implementation"
+---
+
 # Solution: Authorization Architecture
 
 ## RBAC (Role-Based Access Control)

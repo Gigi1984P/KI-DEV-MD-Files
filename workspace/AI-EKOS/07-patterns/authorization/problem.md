@@ -1,3 +1,18 @@
+---
+tags:
+  - auth
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Problem: Access Control"
+read_when:
+  - "Designing authorization architecture"
+  - "Reviewing authorization implementation"
+---
+
 # Problem: Access Control
 
 ## Context

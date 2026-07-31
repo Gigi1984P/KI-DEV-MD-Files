@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Bug Triage"
+read_when:
+  - "Running support operations"
+---
+
 # Bug Triage
 
 ## Overview

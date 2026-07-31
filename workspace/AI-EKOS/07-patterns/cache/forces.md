@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Forces"
+read_when:
+  - "Designing cache architecture"
+  - "Reviewing cache implementation"
+---
+
 # Forces
 
 ## Overview

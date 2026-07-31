@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Folder Structure"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Folder Structure
 
 ## Overview

@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Diagram"
+read_when:
+  - "Designing cache architecture"
+  - "Reviewing cache implementation"
+---
+
 # Diagram
 
 ## Overview

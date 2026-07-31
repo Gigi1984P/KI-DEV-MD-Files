@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Problem"
+read_when:
+  - "Designing event architecture"
+  - "Reviewing event implementation"
+---
+
 # Problem
 
 ## Overview

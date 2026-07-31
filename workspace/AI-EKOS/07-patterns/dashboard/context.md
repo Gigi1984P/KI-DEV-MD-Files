@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Context"
+read_when:
+  - "Designing dashboard architecture"
+  - "Reviewing dashboard implementation"
+---
+
 # Context
 
 ## Overview

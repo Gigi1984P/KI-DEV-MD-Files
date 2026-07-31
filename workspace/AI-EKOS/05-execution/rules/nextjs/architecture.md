@@ -1,3 +1,20 @@
+---
+tags:
+  - anti-patterns
+  - auth
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Next.js Architecture"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Architecture
 
 ## App Router vs Pages Router

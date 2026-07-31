@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Create Dashboard"
+read_when:
+  - "Running build operations"
+---
+
 # Create Dashboard
 
 ## Overview

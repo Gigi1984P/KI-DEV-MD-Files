@@ -1,3 +1,16 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - nextjs
+  - react
+  - security
+summary: "Server Actions"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Server Actions
 
 ## What Are Server Actions

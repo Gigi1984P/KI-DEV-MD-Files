@@ -1,3 +1,17 @@
+---
+tags:
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Problem: Complex Task Execution"
+read_when:
+  - "Designing agent architecture"
+  - "Reviewing agent implementation"
+---
+
 # Problem: Complex Task Execution
 
 ## Context

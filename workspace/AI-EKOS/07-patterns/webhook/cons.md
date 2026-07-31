@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Cons"
+read_when:
+  - "Designing webhook architecture"
+  - "Reviewing webhook implementation"
+---
+
 # Cons
 
 ## Overview

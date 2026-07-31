@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - security
+  - sql
+summary: "Anti Patterns"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # Anti Patterns
 
 ## Overview

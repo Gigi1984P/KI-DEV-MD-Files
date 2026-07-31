@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - performance
+  - security
+  - stripe
+summary: "Security"
+read_when:
+  - "Implementing stripe features"
+  - "Troubleshooting stripe issues"
+---
+
 # Security
 
 ## Overview

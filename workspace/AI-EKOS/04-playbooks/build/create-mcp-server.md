@@ -1,3 +1,16 @@
+---
+tags:
+  - ai-agents
+  - anti-patterns
+  - best-practices
+  - mcp
+  - performance
+  - security
+summary: "Create Mcp Server"
+read_when:
+  - "Running build operations"
+---
+
 # Create Mcp Server
 
 ## Overview

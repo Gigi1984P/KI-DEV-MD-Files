@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Next.js Rules"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Rules
 
 ## Purpose

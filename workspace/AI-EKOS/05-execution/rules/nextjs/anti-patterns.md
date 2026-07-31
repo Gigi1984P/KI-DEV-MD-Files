@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - nextjs
+  - performance
+  - react
+  - security
+summary: "Next.js Anti-Patterns"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Anti-Patterns
 
 ## Server Component Anti-Patterns

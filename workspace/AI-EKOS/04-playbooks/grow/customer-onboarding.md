@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Customer Onboarding"
+read_when:
+  - "Running grow operations"
+---
+
 # Customer Onboarding
 
 ## Overview

@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Cons"
+read_when:
+  - "Designing agent architecture"
+  - "Reviewing agent implementation"
+---
+
 # Cons
 
 ## Overview

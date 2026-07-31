@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Proposal"
+read_when:
+  - "Running sales operations"
+---
+
 # Proposal
 
 ## Overview

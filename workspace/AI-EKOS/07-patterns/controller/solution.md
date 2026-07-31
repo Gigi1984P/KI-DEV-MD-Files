@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Controller Architecture"
+read_when:
+  - "Designing controller architecture"
+  - "Reviewing controller implementation"
+---
+
 # Solution: Controller Architecture
 
 ## Overview

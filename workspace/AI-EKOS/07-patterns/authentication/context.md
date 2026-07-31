@@ -1,3 +1,13 @@
+---
+tags:
+  - auth
+  - security
+summary: "Context: When to Apply Authentication Patterns"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Context: When to Apply Authentication Patterns
 
 ## Prerequisites

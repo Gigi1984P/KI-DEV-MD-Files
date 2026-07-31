@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Cons"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Cons
 
 ## Overview

@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Queue Architecture"
+read_when:
+  - "Designing queue architecture"
+  - "Reviewing queue implementation"
+---
+
 # Solution: Queue Architecture
 
 ## Architecture

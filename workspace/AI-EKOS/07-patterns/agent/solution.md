@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Agent Architecture"
+read_when:
+  - "Designing agent architecture"
+  - "Reviewing agent implementation"
+---
+
 # Solution: Agent Architecture
 
 ## ReAct Pattern (Reason + Act)

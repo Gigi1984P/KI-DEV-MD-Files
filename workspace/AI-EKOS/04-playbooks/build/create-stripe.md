@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - performance
+  - security
+  - stripe
+summary: "Create Stripe"
+read_when:
+  - "Running build operations"
+---
+
 # Create Stripe
 
 ## Overview

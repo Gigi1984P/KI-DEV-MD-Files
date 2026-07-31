@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - security
+  - sql
+summary: "Recipes"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # Recipes
 
 ## Overview

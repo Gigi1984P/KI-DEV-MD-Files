@@ -1,3 +1,22 @@
+---
+tags:
+  - ai
+  - auth
+  - database
+  - embeddings
+  - nextjs
+  - performance
+  - postgres
+  - rag
+  - react
+  - security
+  - sql
+summary: "Problem: Secure User Authentication"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Problem: Secure User Authentication
 
 ## Context

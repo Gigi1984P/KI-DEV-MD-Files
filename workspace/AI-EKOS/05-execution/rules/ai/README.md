@@ -1,3 +1,17 @@
+---
+tags:
+  - ai
+  - ai-agents
+  - embeddings
+  - mcp
+  - rag
+  - security
+summary: "AI Rules"
+read_when:
+  - "Implementing ai features"
+  - "Troubleshooting ai issues"
+---
+
 # AI Rules
 
 ## Purpose

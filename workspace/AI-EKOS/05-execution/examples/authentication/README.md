@@ -67,5 +67,5 @@ describe('Authentication', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/authentication/)
-- [Recipe](../../recipes/build-authentication/)
+- [Pattern](../../07-patterns/authentication/)
+- *Recipe: wird in zukünftiger Version ergänzt*

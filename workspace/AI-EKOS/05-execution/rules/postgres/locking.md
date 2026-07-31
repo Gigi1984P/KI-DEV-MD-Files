@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - sql
+summary: "PostgreSQL Locking"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # PostgreSQL Locking
 
 ## Lock Types

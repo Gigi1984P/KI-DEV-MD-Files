@@ -67,5 +67,5 @@ describe('Audit Platform', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/audit-platform/)
-- [Recipe](../../recipes/build-audit-platform/)
+- *Pattern: wird in zukünftiger Version ergänzt*
+- *Recipe: wird in zukünftiger Version ergänzt*

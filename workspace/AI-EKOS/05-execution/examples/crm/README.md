@@ -67,5 +67,5 @@ describe('Crm', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/crm/)
-- [Recipe](../../recipes/build-crm/)
+- *Pattern: wird in zukünftiger Version ergänzt*
+- [Recipe](../../08-recipes/build-crm/)

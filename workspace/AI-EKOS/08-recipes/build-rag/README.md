@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Readme"
+read_when:
+  - "Building a rag from scratch"
+---
+
 # Readme
 
 ## Overview

@@ -1,3 +1,13 @@
+---
+tags:
+  - nextjs
+  - react
+summary: "Next.js Patterns"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Patterns
 
 ## Pattern: Interleaved Server/Client Components

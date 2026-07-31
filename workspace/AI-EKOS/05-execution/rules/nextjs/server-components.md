@@ -1,3 +1,18 @@
+---
+tags:
+  - ai
+  - anti-patterns
+  - best-practices
+  - embeddings
+  - nextjs
+  - rag
+  - react
+summary: "Server Components"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Server Components
 
 ## Philosophy

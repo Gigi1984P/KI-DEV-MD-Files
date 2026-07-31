@@ -67,5 +67,5 @@ describe('Dashboard', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/dashboard/)
-- [Recipe](../../recipes/build-dashboard/)
+- [Pattern](../../07-patterns/dashboard/)
+- [Recipe](../../08-recipes/build-dashboard/)

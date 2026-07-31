@@ -67,5 +67,5 @@ describe('Rag', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/rag/)
-- [Recipe](../../recipes/build-rag/)
+- [Pattern](../../07-patterns/rag/)
+- [Recipe](../../08-recipes/build-rag/)

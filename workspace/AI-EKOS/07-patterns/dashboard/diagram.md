@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Diagram"
+read_when:
+  - "Designing dashboard architecture"
+  - "Reviewing dashboard implementation"
+---
+
 # Diagram
 
 ## Overview

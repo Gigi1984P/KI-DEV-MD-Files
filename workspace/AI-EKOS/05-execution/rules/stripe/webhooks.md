@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - security
+  - stripe
+summary: "Stripe Webhooks"
+read_when:
+  - "Implementing stripe features"
+  - "Troubleshooting stripe issues"
+---
+
 # Stripe Webhooks
 
 ## Security: Verify Signatures

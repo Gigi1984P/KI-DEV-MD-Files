@@ -1,3 +1,18 @@
+---
+tags:
+  - ai
+  - anti-patterns
+  - auth
+  - best-practices
+  - embeddings
+  - rag
+  - security
+summary: "Next.js Security"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Security
 
 ## Headers Configuration

@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Pricing"
+read_when:
+  - "Running grow operations"
+---
+
 # Pricing
 
 ## Overview

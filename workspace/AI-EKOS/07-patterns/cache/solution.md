@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Caching Architecture"
+read_when:
+  - "Designing cache architecture"
+  - "Reviewing cache implementation"
+---
+
 # Solution: Caching Architecture
 
 ## Architecture

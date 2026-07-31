@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Discovery Workshop"
+read_when:
+  - "Running sales operations"
+---
+
 # Discovery Workshop
 
 ## Overview

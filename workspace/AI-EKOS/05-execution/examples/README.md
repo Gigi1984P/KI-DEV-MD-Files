@@ -67,5 +67,5 @@ describe('Examples', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/examples/)
-- [Recipe](../../recipes/build-examples/)
+- [Pattern](*Übersicht wird in zukünftiger Version ergänzt*)
+- [Recipe](*Übersicht wird in zukünftiger Version ergänzt*)

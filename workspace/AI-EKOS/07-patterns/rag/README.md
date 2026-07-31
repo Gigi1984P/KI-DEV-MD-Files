@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Readme"
+read_when:
+  - "Designing rag architecture"
+  - "Reviewing rag implementation"
+---
+
 # Readme
 
 ## Overview

@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - nextjs
+  - payments
+  - react
+  - stripe
+summary: "Next.js Routing"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Routing
 
 ## App Router Conventions

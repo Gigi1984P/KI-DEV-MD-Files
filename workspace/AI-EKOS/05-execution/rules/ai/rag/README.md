@@ -1,3 +1,20 @@
+---
+tags:
+  - ai
+  - anti-patterns
+  - best-practices
+  - database
+  - embeddings
+  - performance
+  - postgres
+  - rag
+  - sql
+summary: "RAG (Retrieval-Augmented Generation)"
+read_when:
+  - "Implementing ai features"
+  - "Troubleshooting ai issues"
+---
+
 # RAG (Retrieval-Augmented Generation)
 
 ## What is RAG

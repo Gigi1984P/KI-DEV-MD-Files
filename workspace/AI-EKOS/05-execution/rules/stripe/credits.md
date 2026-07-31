@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - performance
+  - security
+  - stripe
+summary: "Credits"
+read_when:
+  - "Implementing stripe features"
+  - "Troubleshooting stripe issues"
+---
+
 # Credits
 
 ## Overview

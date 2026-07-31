@@ -1,3 +1,10 @@
+---
+tags:
+summary: "Operate Playbooks"
+read_when:
+  - "Running operate operations"
+---
+
 # Operate Playbooks
 
 ## Purpose

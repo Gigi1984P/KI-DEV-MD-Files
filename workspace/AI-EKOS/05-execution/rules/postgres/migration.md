@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - security
+  - sql
+summary: "Migration"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # Migration
 
 ## Overview

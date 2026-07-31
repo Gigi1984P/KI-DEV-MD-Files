@@ -1,0 +1,30 @@
+name: Generate MANIFEST.md
+
+on:
+  push:
+    branches: [main, cleanup/**]
+    paths:
+      - 'workspace/AI-EKOS/**/*.md'
+  workflow_dispatch:  # Manuell auslösbar
+
+jobs:
+  generate-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Für Auto-Commit
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate MANIFEST.md
+        run: |
+          chmod +x scripts/generate-manifest.sh
+          ./scripts/generate-manifest.sh
+      
+      - name: Commit changes if any
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add workspace/AI-EKOS/MANIFEST.md
+          git diff --staged --quiet || git commit -m "chore: auto-update MANIFEST.md [skip ci]"
+          git push

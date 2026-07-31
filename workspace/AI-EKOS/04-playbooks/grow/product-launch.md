@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Product Launch"
+read_when:
+  - "Running grow operations"
+---
+
 # Product Launch
 
 ## Overview

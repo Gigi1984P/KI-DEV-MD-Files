@@ -1,3 +1,16 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - stripe
+summary: "Stripe Checkout"
+read_when:
+  - "Implementing stripe features"
+  - "Troubleshooting stripe issues"
+---
+
 # Stripe Checkout
 
 ## Overview

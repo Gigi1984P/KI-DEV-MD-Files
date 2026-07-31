@@ -1,3 +1,18 @@
+---
+tags:
+  - anti-patterns
+  - auth
+  - best-practices
+  - nextjs
+  - performance
+  - react
+  - security
+summary: "Next.js Middleware"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Middleware
 
 ## Overview

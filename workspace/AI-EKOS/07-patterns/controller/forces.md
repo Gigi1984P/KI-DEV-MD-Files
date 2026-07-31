@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Forces"
+read_when:
+  - "Designing controller architecture"
+  - "Reviewing controller implementation"
+---
+
 # Forces
 
 ## Overview

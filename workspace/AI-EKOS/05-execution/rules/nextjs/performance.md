@@ -1,3 +1,16 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - nextjs
+  - performance
+  - react
+summary: "Next.js Performance"
+read_when:
+  - "Implementing nextjs features"
+  - "Troubleshooting nextjs issues"
+---
+
 # Next.js Performance
 
 ## Core Web Vitals Targets

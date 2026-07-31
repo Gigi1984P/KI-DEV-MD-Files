@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - performance
+  - postgres
+  - sql
+summary: "PostgreSQL Backup Strategies"
+read_when:
+  - "Implementing postgres features"
+  - "Troubleshooting postgres issues"
+---
+
 # PostgreSQL Backup Strategies
 
 ## pg_dump (Logical Backups)

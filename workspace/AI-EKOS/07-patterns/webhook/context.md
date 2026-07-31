@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Context"
+read_when:
+  - "Designing webhook architecture"
+  - "Reviewing webhook implementation"
+---
+
 # Context
 
 ## Overview

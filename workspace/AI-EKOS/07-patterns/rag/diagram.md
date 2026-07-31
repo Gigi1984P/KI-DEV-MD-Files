@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Diagram"
+read_when:
+  - "Designing rag architecture"
+  - "Reviewing rag implementation"
+---
+
 # Diagram
 
 ## Overview

@@ -1,3 +1,19 @@
+---
+tags:
+  - ai-agents
+  - database
+  - mcp
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Problem: AI Tool Integration"
+read_when:
+  - "Designing mcp architecture"
+  - "Reviewing mcp implementation"
+---
+
 # Problem: AI Tool Integration
 
 ## Context

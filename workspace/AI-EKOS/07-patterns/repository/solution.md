@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Solution"
+read_when:
+  - "Designing repository architecture"
+  - "Reviewing repository implementation"
+---
+
 # Solution
 
 ## Overview

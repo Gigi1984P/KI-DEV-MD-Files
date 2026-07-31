@@ -1,3 +1,18 @@
+---
+tags:
+  - ai
+  - ai-agents
+  - billing
+  - embeddings
+  - mcp
+  - payments
+  - rag
+  - stripe
+summary: "Recipes"
+read_when:
+  - "Building a README.md from scratch"
+---
+
 # Recipes
 
 ## Purpose

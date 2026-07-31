@@ -1,3 +1,19 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Service Layer Pattern"
+read_when:
+  - "Designing service architecture"
+  - "Reviewing service implementation"
+---
+
 # Solution: Service Layer Pattern
 
 ## Architecture

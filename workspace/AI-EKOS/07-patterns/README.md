@@ -1,3 +1,19 @@
+---
+tags:
+  - ai
+  - ai-agents
+  - anti-patterns
+  - auth
+  - best-practices
+  - embeddings
+  - mcp
+  - rag
+summary: "Patterns"
+read_when:
+  - "Designing README.md architecture"
+  - "Reviewing README.md implementation"
+---
+
 # Patterns
 
 ## Purpose

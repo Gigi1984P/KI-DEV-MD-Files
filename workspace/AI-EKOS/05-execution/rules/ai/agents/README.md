@@ -1,3 +1,18 @@
+---
+tags:
+  - ai
+  - ai-agents
+  - anti-patterns
+  - best-practices
+  - embeddings
+  - mcp
+  - rag
+summary: "AI Agents"
+read_when:
+  - "Implementing ai features"
+  - "Troubleshooting ai issues"
+---
+
 # AI Agents
 
 ## Architecture

@@ -67,5 +67,5 @@ describe('Ai Agent', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/ai-agent/)
-- [Recipe](../../recipes/build-ai-agent/)
+- *Pattern: wird in zukünftiger Version ergänzt*
+- *Recipe: wird in zukünftiger Version ergänzt*

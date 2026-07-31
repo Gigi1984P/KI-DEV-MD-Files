@@ -1,3 +1,20 @@
+---
+tags:
+  - billing
+  - database
+  - nextjs
+  - payments
+  - postgres
+  - react
+  - security
+  - sql
+  - stripe
+summary: "Rules"
+read_when:
+  - "Implementing README.md features"
+  - "Troubleshooting README.md issues"
+---
+
 # Rules
 
 ## Purpose

@@ -1,3 +1,14 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Database Migration"
+read_when:
+  - "Running operate operations"
+---
+
 # Database Migration
 
 ## Overview

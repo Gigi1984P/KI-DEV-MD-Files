@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Context"
+read_when:
+  - "Designing mcp architecture"
+  - "Reviewing mcp implementation"
+---
+
 # Context
 
 ## Overview

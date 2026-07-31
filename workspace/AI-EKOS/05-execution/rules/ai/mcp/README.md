@@ -1,3 +1,14 @@
+---
+tags:
+  - ai-agents
+  - mcp
+  - security
+summary: "Model Context Protocol (MCP)"
+read_when:
+  - "Implementing ai features"
+  - "Troubleshooting ai issues"
+---
+
 # Model Context Protocol (MCP)
 
 ## Overview

@@ -1,3 +1,22 @@
+---
+tags:
+  - ai-agents
+  - anti-patterns
+  - best-practices
+  - database
+  - mcp
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - security
+  - sql
+summary: "Solution: Model Context Protocol (MCP)"
+read_when:
+  - "Designing mcp architecture"
+  - "Reviewing mcp implementation"
+---
+
 # Solution: Model Context Protocol (MCP)
 
 ## Architecture

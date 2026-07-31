@@ -1,3 +1,20 @@
+---
+tags:
+  - ai
+  - database
+  - embeddings
+  - nextjs
+  - performance
+  - postgres
+  - rag
+  - react
+  - sql
+summary: "Problem: LLM Knowledge Limitations"
+read_when:
+  - "Designing rag architecture"
+  - "Reviewing rag implementation"
+---
+
 # Problem: LLM Knowledge Limitations
 
 ## Context

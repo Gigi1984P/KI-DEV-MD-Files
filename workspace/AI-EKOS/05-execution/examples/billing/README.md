@@ -67,5 +67,5 @@ describe('Billing', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/billing/)
-- [Recipe](../../recipes/build-billing/)
+- [Pattern](../../07-patterns/billing/)
+- *Recipe: wird in zukünftiger Version ergänzt*

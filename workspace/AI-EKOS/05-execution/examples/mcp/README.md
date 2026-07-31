@@ -67,5 +67,5 @@ describe('Mcp', () => {
 ```
 
 ## Related
-- [Pattern](../../patterns/mcp/)
-- [Recipe](../../recipes/build-mcp/)
+- [Pattern](../../07-patterns/mcp/)
+- [Recipe](../../08-recipes/build-mcp/)

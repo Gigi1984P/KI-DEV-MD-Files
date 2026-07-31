@@ -1,3 +1,20 @@
+---
+tags:
+  - billing
+  - database
+  - nextjs
+  - payments
+  - performance
+  - postgres
+  - react
+  - sql
+  - stripe
+summary: "Problem: Business Logic Organization"
+read_when:
+  - "Designing service architecture"
+  - "Reviewing service implementation"
+---
+
 # Problem: Business Logic Organization
 
 ## Context

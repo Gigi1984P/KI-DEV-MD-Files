@@ -1,3 +1,17 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - billing
+  - payments
+  - performance
+  - security
+  - stripe
+summary: "Readme"
+read_when:
+  - "Building a stripe from scratch"
+---
+
 # Readme
 
 ## Overview

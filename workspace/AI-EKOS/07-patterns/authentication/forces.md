@@ -1,3 +1,19 @@
+---
+tags:
+  - auth
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - security
+  - sql
+summary: "Forces: Authentication Trade-offs"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Forces: Authentication Trade-offs
 
 ## Security vs Usability

@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Cons"
+read_when:
+  - "Designing event architecture"
+  - "Reviewing event implementation"
+---
+
 # Cons
 
 ## Overview

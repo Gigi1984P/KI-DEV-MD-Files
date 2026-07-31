@@ -1,3 +1,17 @@
+---
+tags:
+  - ai
+  - anti-patterns
+  - best-practices
+  - embeddings
+  - performance
+  - rag
+  - security
+summary: "Create Rag"
+read_when:
+  - "Running build operations"
+---
+
 # Create Rag
 
 ## Overview

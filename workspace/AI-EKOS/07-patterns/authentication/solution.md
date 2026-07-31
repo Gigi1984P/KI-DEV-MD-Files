@@ -1,3 +1,18 @@
+---
+tags:
+  - auth
+  - database
+  - nextjs
+  - performance
+  - postgres
+  - react
+  - sql
+summary: "Solution: Authentication Architecture"
+read_when:
+  - "Designing authentication architecture"
+  - "Reviewing authentication implementation"
+---
+
 # Solution: Authentication Architecture
 
 ## Components

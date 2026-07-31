@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Prompt Engineering"
+read_when:
+  - "Implementing ai features"
+  - "Troubleshooting ai issues"
+---
+
 # Prompt Engineering
 
 ## Principles

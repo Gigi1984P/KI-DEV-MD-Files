@@ -1,3 +1,15 @@
+---
+tags:
+  - anti-patterns
+  - best-practices
+  - performance
+  - security
+summary: "Readme"
+read_when:
+  - "Designing billing architecture"
+  - "Reviewing billing implementation"
+---
+
 # Readme
 
 ## Overview
