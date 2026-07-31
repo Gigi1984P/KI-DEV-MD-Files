@@ -4,8 +4,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Files | 354 |
-| Total Directories | 130 |
+| Total Files | 273 |
+| Total Directories | 125 |
 | Last Updated | 2026-07-31 |
 
 ## Files by Category
@@ -18,7 +18,7 @@
 | 04-playbooks | 25 |
 | 05-execution | 113 |
 | 06-decision-engine | 9 |
-| 07-patterns | 105 |
+| 07-patterns | 23 |
 | 08-recipes | 11 |
 | 09-boilerplates | 9 |
 
@@ -34,6 +34,7 @@
 - ai-context.md
 - architecture.md
 - consistency-report.md
+- project-summary.md
 - update-process.md
 
 ---
