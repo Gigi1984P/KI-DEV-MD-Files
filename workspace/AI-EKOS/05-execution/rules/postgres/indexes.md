@@ -56,7 +56,7 @@ CREATE INDEX idx_events_created ON events USING BRIN(created_at);
 
 ### Column Ordering
 ```sql
--- For queries like: WHERE status = 'active' AND created_at > '2024-01-01'
+-- For queries like: WHERE status = 'active' AND created_at > '2026-01-01'
 CREATE INDEX idx_orders_status_created ON orders(status, created_at);
 ```
 

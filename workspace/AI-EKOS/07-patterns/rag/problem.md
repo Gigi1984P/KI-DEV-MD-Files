@@ -29,7 +29,7 @@ Large Language Models (LLMs) have a knowledge cutoff, no access to private data,
 - Confidence doesn't correlate with accuracy
 
 ### Outdated Knowledge
-- Training data has a cutoff date (e.g., April 2024)
+- Training data has a cutoff date (e.g., April 2026)
 - Can't access real-time information
 - Product changes, pricing updates, policy changes are unknown
 

@@ -23,7 +23,7 @@ EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)
 SELECT u.name, COUNT(o.id) as order_count
 FROM users u
 LEFT JOIN orders o ON u.id = o.user_id
-WHERE u.created_at > '2024-01-01'
+WHERE u.created_at > '2026-01-01'
 GROUP BY u.name
 HAVING COUNT(o.id) > 5
 ORDER BY order_count DESC
@@ -61,11 +61,11 @@ CREATE TABLE events (
 ) PARTITION BY RANGE (created_at);
 
 -- Create partitions
-CREATE TABLE events_2024q1 PARTITION OF events
-    FOR VALUES FROM ('2024-01-01') TO ('2024-04-01');
+CREATE TABLE events_2026q1 PARTITION OF events
+    FOR VALUES FROM ('2026-01-01') TO ('2026-04-01');
 
-CREATE TABLE events_2024q2 PARTITION OF events
-    FOR VALUES FROM ('2024-04-01') TO ('2024-07-01');
+CREATE TABLE events_2026q2 PARTITION OF events
+    FOR VALUES FROM ('2026-04-01') TO ('2026-07-01');
 
 -- Automatic partition creation with trigger
 CREATE OR REPLACE FUNCTION create_event_partition()

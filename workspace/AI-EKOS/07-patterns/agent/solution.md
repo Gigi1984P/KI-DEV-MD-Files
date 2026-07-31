@@ -24,7 +24,7 @@ Action: query_database({query: "SELECT * FROM orders WHERE user_id = ? ORDER BY 
 Observation: [{id: 1, total: 99.99, status: 'shipped'}, ...]
 Thought: The user has recent orders. Let me check shipping status.
 Action: query_shipping_api({order_id: 1})
-Observation: {status: 'in_transit', eta: '2024-01-15'}
+Observation: {status: 'in_transit', eta: '2026-01-15'}
 Thought: I have enough information to answer the user.
 Final Answer: Your order #1 ($99.99) is in transit and expected to arrive on January 15th.
 ```

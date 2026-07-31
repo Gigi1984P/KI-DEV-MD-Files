@@ -31,13 +31,13 @@ The component should handle loading and error states."
 ```
 "Format these dates consistently:
 
-Input: 2024-01-15
-Output: January 15, 2024
+Input: 2026-01-15
+Output: January 15, 2026
 
-Input: 2024-06-20
-Output: June 20, 2024
+Input: 2026-06-20
+Output: June 20, 2026
 
-Now format: 2024-12-25"
+Now format: 2026-12-25"
 ```
 
 ### 4. Specify Output Format

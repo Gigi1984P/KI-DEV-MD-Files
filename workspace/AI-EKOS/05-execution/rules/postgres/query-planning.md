@@ -22,7 +22,7 @@ EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)
 SELECT u.name, COUNT(o.id)
 FROM users u
 LEFT JOIN orders o ON u.id = o.user_id
-WHERE u.created_at > '2024-01-01'
+WHERE u.created_at > '2026-01-01'
 GROUP BY u.name
 ORDER BY COUNT(o.id) DESC
 LIMIT 10;
@@ -38,7 +38,7 @@ Limit  (cost=1000.00..1000.10 rows=10 width=20) (actual time=10.234..10.245 rows
               Group Key: u.name
               -> Nested Loop Left Join  (cost=100.00..400.00 rows=10000 width=20) (actual time=0.800..3.200 rows=10000 loops=1)
                     -> Seq Scan on users u  (cost=0.00..50.00 rows=5000 width=20) (actual time=0.200..0.500 rows=5000 loops=1)
-                          Filter: (created_at > '2024-01-01'::date)
+                          Filter: (created_at > '2026-01-01'::date)
                           Rows Removed by Filter: 1000
                     -> Index Scan using orders_user_id_idx on orders o  (cost=0.42..0.06 rows=2 width=8) (actual time=0.000..0.000 rows=2 loops=5000)
                           Index Cond: (user_id = u.id)
@@ -136,10 +136,10 @@ WHERE status = 'active' OR status = 'pending'
 WHERE status IN ('active', 'pending')
 
 -- ❌ Functions on columns prevent index usage
-WHERE YEAR(created_at) = 2024
+WHERE YEAR(created_at) = 2026
 
 -- ✅ Range query
-WHERE created_at >= '2024-01-01' AND created_at < '2025-01-01'
+WHERE created_at >= '2026-01-01' AND created_at < '2025-01-01'
 
 -- ❌ Leading wildcard prevents index
 WHERE email LIKE '%@gmail.com'
@@ -168,8 +168,8 @@ CREATE TABLE events (
     data JSONB
 ) PARTITION BY RANGE (created_at);
 
-CREATE TABLE events_2024_q1 PARTITION OF events
-    FOR VALUES FROM ('2024-01-01') TO ('2024-04-01');
+CREATE TABLE events_2026_q1 PARTITION OF events
+    FOR VALUES FROM ('2026-01-01') TO ('2026-04-01');
 ```
 
 ## Anti-Patterns

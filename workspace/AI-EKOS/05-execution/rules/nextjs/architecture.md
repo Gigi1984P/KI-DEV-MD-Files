@@ -33,7 +33,7 @@ read_when:
 | **Learning Curve** | Steeper | Familiar |
 
 ### When to Use App Router
-- New projects starting 2024+
+- New projects starting 2026+
 - Need for server-first architecture
 - Complex layout requirements
 - SEO-critical with dynamic content

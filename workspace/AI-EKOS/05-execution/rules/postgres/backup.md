@@ -77,10 +77,10 @@ pgbackrest --stanza=mydb backup --type=incr
 createdb mydb_restore
 
 # Restore
-pg_restore -d mydb_restore mydb-20240115.dump
+pg_restore -d mydb_restore mydb-20260115.dump
 
 # Or with psql for plain SQL
-psql -d mydb_restore < mydb-20240115.sql
+psql -d mydb_restore < mydb-20260115.sql
 ```
 
 ### Verification

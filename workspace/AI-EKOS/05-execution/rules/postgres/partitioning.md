@@ -31,15 +31,15 @@ CREATE TABLE events (
 ) PARTITION BY RANGE (created_at);
 
 -- Create partitions
-CREATE TABLE events_2024q1 PARTITION OF events
-    FOR VALUES FROM ('2024-01-01') TO ('2024-04-01');
+CREATE TABLE events_2026q1 PARTITION OF events
+    FOR VALUES FROM ('2026-01-01') TO ('2026-04-01');
 
-CREATE TABLE events_2024q2 PARTITION OF events
-    FOR VALUES FROM ('2024-04-01') TO ('2024-07-01');
+CREATE TABLE events_2026q2 PARTITION OF events
+    FOR VALUES FROM ('2026-04-01') TO ('2026-07-01');
 
 -- Indexes on partitions
-CREATE INDEX idx_events_2024q1_user ON events_2024q1(user_id);
-CREATE INDEX idx_events_2024q1_type ON events_2024q1(event_type);
+CREATE INDEX idx_events_2026q1_user ON events_2026q1(user_id);
+CREATE INDEX idx_events_2026q1_type ON events_2026q1(event_type);
 ```
 
 ## Automatic Partitioning
@@ -111,8 +111,8 @@ VACUUM ANALYZE events;
 -- Partition pruning: Only scans relevant partitions
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT * FROM events 
-WHERE created_at BETWEEN '2024-01-01' AND '2024-01-31';
--- Output: Only scans events_2024_01 partition
+WHERE created_at BETWEEN '2026-01-01' AND '2026-01-31';
+-- Output: Only scans events_2026_01 partition
 ```
 
 ## Monitoring
