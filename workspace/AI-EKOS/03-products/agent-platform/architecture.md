@@ -1,113 +1,142 @@
-# Architecture
+---
+tags:
+  - product
+  - agent-platform
+  - architecture
+  - system-design
+summary: "System Architecture: Multi-Tenant Agent Platform"
+read_when:
+  - "Designing system components"
+  - "Scaling agent-platform"
+  - "Security reviews"
+---
 
-## Overview
+# Architecture: Agent Platform
 
-This product documentation covers architecture for production use.
+## High-Level
 
-## Implementation
-
-### Setup
-
-```bash
-# Installation and configuration
-npm install relevant-package
+```
+┌─────────────┐     ┌──────────────┐     ┌─────────────────┐
+│   Next.js   │────▶│   Fastify    │────▶│   PostgreSQL    │
+│   (UI)      │     │   (API)      │     │   (Metadata)    │
+└─────────────┘     └──────────────┘     └─────────────────┘
+                            │
+                            ▼
+                    ┌──────────────┐
+                    │   Agent      │
+                    │   Runtime    │
+                    │   (Worker)   │
+                    └──────────────┘
+                            │
+        ┌───────────────────┼───────────────────┐
+        ▼                   ▼                   ▼
+  ┌──────────┐      ┌──────────┐        ┌──────────┐
+  │  Redis   │      │  S3/Minio │        │  LLM     │
+  │ (Queue)  │      │ (Traces) │        │ Providers│
+  └──────────┘      └──────────┘        └──────────┘
 ```
 
-### Core Implementation
+---
 
-```typescript
-// Example TypeScript implementation
-export async function architecture_handler() {
-  // Implementation
-}
-```
+## Komponenten
 
-### Error Handling
+### 1. Next.js Frontend
 
-```typescript
-try {
-  const result = await architecture_handler();
-  return result;
-} catch (error) {
-  console.error('Architecture error:', error);
-  throw error;
-}
-```
+- **App Router** mit React Server Components
+- **Real-time Updates** über Server-Sent Events (kein WebSocket nötig für Runs)
+- **Feature Flags**: PostHog für A/B Testing von UI-Änderungen
+- **i18n**: next-intl (Deutsch/Englisch)
 
-## Best Practices
+### 2. Fastify API Layer
 
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
+- **REST + Webhooks** (kein GraphQL — Overkill für interne API)
+- **Auth**: JWT (15min) + Refresh Token (30d, Redis)
+- **Rate Limiting**: Bucket pro API Key (Redis-Backed)
+- **Validation**: Zod Schemas (shared mit Frontend via Monorepo)
 
-## Code Examples
+### 3. Agent Runtime
 
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
+- **Isolated Execution**: Jeder Run in eigenem Node.js Worker Thread
+- **Timeout**: 5min default, 15min max (konfigurierbar)
+- **Sandboxing**: 
+  - Kein `fs` Zugriff außer `/tmp/run-{id}/`
+  - Kein `net` außer whitelistete Domains (Skill-Config)
+  - Memory Limit: 512MB pro Run
+- **Retry Policy**: Exponentielles Backoff bei Skill-Failures (max 3x)
 
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
+### 4. PostgreSQL (Metadata)
 
-## Testing
+**Tabellen**:
+- `agents` (id, workspace_id, name, prompt, skills, config, version, created_by)
+- `agent_versions` (id, agent_id, version, prompt, config, deployed_at)
+- `runs` (id, agent_id, status, input, output, error, cost_usd, tokens, duration_ms, created_at)
+- `workspaces` (id, name, plan, api_keys, settings)
+- `skills` (id, name, version, schema, is_marketplace)
+- `webhooks` (id, workspace_id, url, events, secret)
 
-```typescript
-import { describe, it, expect } from 'vitest';
+**Partitioning**: `runs` nach `created_at` (monthly partitions) — ältere Runs in S3 archiviert.
 
-describe('Architecture', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
+### 5. Redis (Queue + State)
 
-## Anti-Patterns
+- **Queue**: BullMQ für Run-Scheduling (Prioritäten: high, default, low)
+- **State**: Session-Context für Stateful Agents (Conversation Memory)
+- **Cache**: Agent Config (5min TTL), Skill Registry (1h TTL)
 
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
+### 6. Object Storage (Traces)
 
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
+- **S3-kompatibel** (AWS S3 oder Minio self-hosted)
+- **Trace Format**: JSONL — eine Zeile pro Event (LLM Call, Skill Call, Error)
+- **Retention**: 90 Tage hot, dann Glacier (oder Minio Lifecycle Policy)
 
-## Performance Considerations
+---
 
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
+## Sicherheit
 
-## Security Considerations
+### API Security
 
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
+- **API Keys**: SHA-256 gehasht in DB, Prefix `sk_live_` / `sk_test_`
+- **Secrets**: In AWS Secrets Manager / Doppler, nie in Code/DB plaintext
+- **Rotation**: API Keys automatisch alle 90 Tage rotiert (alte bleiben 7d gültig)
 
-## Monitoring
+### Runtime Security
 
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
+- **Prompt Injection**: Input Sanitization (LLM Guardrails: keine PII in Logs, Blocklist für System-Prompts)
+- **Skill Permissions**: Jeder Skill definiert eigene Permissions (z.B. `crm.read`, `crm.write`)
+- **Audit Log**: Jeder Run mit User-ID + IP (compliance)
 
-## Troubleshooting
+### Data Privacy
 
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
+- **GDPR**: EU Region deployment option (Frankfurt)
+- **Data Residency**: Workspace-Level (US/EU) konfigurierbar
+- **Deletion**: Workspace-Deletion löscht alle Runs + Traces (async Job, 30d Backup dann permanent)
 
-## Related
+---
 
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+## Skalierung
+
+| Komponente | Skalierungsstrategie | Bottleneck |
+|---|---|---|
+| Frontend | Vercel Edge Network | — |
+| API | Horizontal (mehr Pods) | DB Connections (Pool: max 100) |
+| Runtime | Horizontal (Worker Autoscaler) | LLM Rate Limits |
+| PostgreSQL | Read Replicas + Partitioning | Writes (batched inserts) |
+| Redis | Cluster Mode (3 Nodes) | Memory |
+| Queue | BullMQ mit Redis Cluster | — |
+
+**Kritische Metriken**:
+- Queue Depth > 1000 → Alert
+- Runtime CPU > 80% → Autoscale
+- DB Connections > 80% → Alert
+- LLM API Errors > 5% → Fallback Model
+
+---
+
+## Deployment
+
+- **Frontend**: Vercel
+- **API + Runtime**: Fly.io (EU Region) oder AWS ECS
+- **PostgreSQL**: Supabase (managed) oder AWS RDS
+- **Redis**: Upstash (managed) oder AWS ElastiCache
+- **S3**: AWS S3 + CloudFront für Traces
+
+**Environments**: `development`, `staging`, `production` (identische Config, nur andere Secrets)

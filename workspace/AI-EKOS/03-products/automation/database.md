@@ -1,113 +1,38 @@
-# Database
+---
+tags:
+  - product
+  - automation
+  - database
+  - schema
+summary: "Database Schema: No-Code Business Process Automation Data Model"
+read_when:
+  - "Database design for automation"
+  - "Writing migrations"
+  - "Data privacy reviews"
+---
 
-## Overview
+# Database: No-Code Business Process Automation
 
-This product documentation covers database for production use.
+## Schema-Übersicht
 
-## Implementation
+- **users** (id, email, name, created_at)
+- **workspaces** (id, name, owner_id, plan, created_at)
+- **automation_resources** (id, workspace_id, name, config, created_at, updated_at)
 
-### Setup
+## Indizes
 
-```bash
-# Installation and configuration
-npm install relevant-package
-```
+- `idx_automation_resources_workspace_id` auf `workspace_id`
+- `idx_automation_resources_created_at` auf `created_at` ( für Time-Range Queries)
 
-### Core Implementation
+## Migrations
 
-```typescript
-// Example TypeScript implementation
-export async function database_handler() {
-  // Implementation
-}
-```
+- Format: SQL (Plain SQL in `migrations/` Verzeichnis)
+- Naming: `YYYYMMDDHHMMSS_description.sql`
+- Rollback: Separate `YYYYMMDDHHMMSS_description.down.sql` Datei
+- Tool: `node-pg-migrate` oder `drizzle-kit`
 
-### Error Handling
+## Data Privacy (GDPR)
 
-```typescript
-try {
-  const result = await database_handler();
-  return result;
-} catch (error) {
-  console.error('Database error:', error);
-  throw error;
-}
-```
-
-## Best Practices
-
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
-
-## Code Examples
-
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
-
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
-
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Database', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+- **Personenbezogene Daten**: users.email, users.name
+- **Löschung**: Soft Delete mit `deleted_at`, permanent nach 30 Tagen
+- **Export**: JSON-Export aller User-Daten auf Anfrage (Art. 20 GDPR)

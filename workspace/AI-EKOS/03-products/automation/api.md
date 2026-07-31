@@ -1,113 +1,51 @@
-# Api
+---
+tags:
+  - product
+  - automation
+  - api
+  - integration
+summary: "API Reference: No-Code Business Process Automation REST API"
+read_when:
+  - "Integrating with automation"
+  - "Building client applications"
+  - "Debugging API issues"
+---
 
-## Overview
+# API: No-Code Business Process Automation
 
-This product documentation covers api for production use.
+## Authentifizierung
 
-## Implementation
-
-### Setup
+Alle API-Calls benötigen einen API Key im Header:
 
 ```bash
-# Installation and configuration
-npm install relevant-package
+curl -H "Authorization: Bearer <API_KEY>" \
+     -H "Content-Type: application/json" \
+     https://api.automation.example.com/v1/
 ```
 
-### Core Implementation
+## Rate Limits
 
-```typescript
-// Example TypeScript implementation
-export async function api_handler() {
-  // Implementation
-}
-```
+- **Free Tier**: 100 Requests/min, 1.000 Runs/Tag
+- **Pro Tier**: 1.000 Requests/min, 10.000 Runs/Tag
+- **Enterprise**: Unlimited
 
-### Error Handling
+## Core Endpoints
 
-```typescript
-try {
-  const result = await api_handler();
-  return result;
-} catch (error) {
-  console.error('Api error:', error);
-  throw error;
-}
-```
+| Endpoint | Methode | Beschreibung |
+|----------|---------|--------------|
+| `/automation` | GET | Liste aller Ressourcen |
+| `/automation/{id}` | GET | Einzel-Resource abrufen |
+| `/automation` | POST | Neue Resource erstellen |
+| `/automation/{id}` | PATCH | Resource aktualisieren |
+| `/automation/{id}` | DELETE | Resource löschen (soft delete) |
 
-## Best Practices
+## Webhooks
 
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
+Konfigurierbar für Events: `created`, `updated`, `deleted`, `error`
 
-## Code Examples
+## Fehler-Codes
 
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
-
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
-
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Api', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+- `400` — Validation Error (Body nicht konform zu Schema)
+- `401` — Unauthorized (API Key ungültig/expired)
+- `429` — Rate Limit überschritten (`Retry-After` Header beachten)
+- `500` — Internal Error (kontaktiere Support mit Request-ID)

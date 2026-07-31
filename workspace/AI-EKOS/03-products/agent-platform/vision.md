@@ -1,113 +1,59 @@
-# Vision
+---
+tags:
+  - product
+  - agent-platform
+  - saas
+  - multi-tenant
+summary: "Vision: Multi-Tenant AI Agent Platform für Enterprise-Kunden"
+read_when:
+  - "Product planning for agent-platform"
+  - "Stakeholder communication"
+  - "Feature prioritization"
+---
 
-## Overview
+# Vision: AI Agent Platform
 
-This product documentation covers vision for production use.
+## Problem
 
-## Implementation
+Enterprises können ihre wiederholbaren Wissensarbeits-Prozesse nicht skalieren, weil:
+- Jeder Prozess manuelles Routing, Kontext-Sammlung und Follow-up erfordert
+- Bestehende Automation-Tools (Zapier, Make) keine echte Reasoning-Fähigkeit haben
+- Custom-Lösungen pro Use-Case entwickelt werden müssen → keine Wiederverwendbarkeit
 
-### Setup
+## Ziel
 
-```bash
-# Installation and configuration
-npm install relevant-package
-```
+Eine Plattform, wo jeder Entwickler/Consultant in <1 Stunde einen produktiven AI-Agenten für einen spezifischen Business-Prozess deployen kann — ohne Machine-Learning-Kenntnisse.
 
-### Core Implementation
+## Kern-Differenzierung
 
-```typescript
-// Example TypeScript implementation
-export async function vision_handler() {
-  // Implementation
-}
-```
+| Feature | Wir | Konkurrenz (LangChain, n8n) |
+|---|---|---|
+| Deployment | One-Click Production | Self-Hosted DIY |
+| Observability | Trace + Replay eingebaut | Logging selbst bauen |
+| Business Metriken | ROI Dashboard pro Agent | Keine Business Layer |
+| Compliance | EU AI Act ready (Dokumentation) | Keine Compliance Tools |
 
-### Error Handling
+## Zielgruppe
 
-```typescript
-try {
-  const result = await vision_handler();
-  return result;
-} catch (error) {
-  console.error('Vision error:', error);
-  throw error;
-}
-```
+- **Primär**: Mittelständische Unternehmen (50-500 Mitarbeiter) mit wiederkehrenden Support/Backoffice-Prozessen
+- **Sekundär**: AI-Agenturen, die für Kunden deployen (White-Label)
 
-## Best Practices
+## Success Metrics (KPIs)
 
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
+- Time-to-Production: < 1 Stunde (vs. 2 Wochen DIY)
+- Agent Success Rate: > 95% (Task completion ohne menschliche Eskalation)
+- Platform NRR: > 120% (Expansion durch neue Agents)
 
-## Code Examples
+## Phase 1 Scope (MVP)
 
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
+- Agent Builder (UI): Prompt + Tool-Konfiguration
+- 5 Production-Ready Skills: Email, Database, HTTP, File, Calendar
+- Tracing Dashboard: Jeder Agent-Run mit Input/Output/Token/Cost
+- Multi-Tenant: Isolierung pro Workspace
 
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
+## Phase 2 Scope
 
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Vision', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+- Agent Marketplace (Community Agents)
+- A/B Testing für Prompts
+- On-Prem Deployment Option
+- EU AI Act Conformity Package (Dokumentation + Risk Assessment)

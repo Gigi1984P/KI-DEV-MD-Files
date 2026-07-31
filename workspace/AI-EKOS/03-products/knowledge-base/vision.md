@@ -1,113 +1,32 @@
-# Vision
+---
+tags:
+  - product
+  - knowledge-base
+  - vision
+  - strategy
+summary: "Vision: RAG-basierte Enterprise Knowledge Base"
+read_when:
+  - "Product planning for knowledge-base"
+  - "Stakeholder presentations"
+  - "Feature prioritization"
+---
 
-## Overview
+# Vision: RAG-basierte Enterprise Knowledge Base
 
-This product documentation covers vision for production use.
+## Problem
 
-## Implementation
+Wissen liegt in Confluence, Notion, Email, Slack — niemand findet es. Neue Mitarbeiter brauchen Wochen für Onboarding.
 
-### Setup
+## Zielgruppe
 
-```bash
-# Installation and configuration
-npm install relevant-package
-```
+Unternehmen ab 100 Mitarbeitern mit verteiltem Wissen
 
-### Core Implementation
+## Kern-Differenzierung
 
-```typescript
-// Example TypeScript implementation
-export async function vision_handler() {
-  // Implementation
-}
-```
+Automatische Ingestion aller Quellen + kontextuelle Antworten mit Source-Attribution (keine Halluzination)
 
-### Error Handling
+## Produkt-Ziele
 
-```typescript
-try {
-  const result = await vision_handler();
-  return result;
-} catch (error) {
-  console.error('Vision error:', error);
-  throw error;
-}
-```
-
-## Best Practices
-
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
-
-## Code Examples
-
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
-
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
-
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Vision', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+1. **Zeitersparnis**: Messbare Reduktion manueller Arbeit um >50%
+2. **Qualität**: Konsistente, nachvollziehbare Ergebnisse statt menschlicher Varianz
+3. **Skalierbarkeit**: Von Pilot-Projekt zu unternehmensweiter Nutzung ohne Re-Architektur

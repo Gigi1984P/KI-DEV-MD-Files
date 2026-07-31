@@ -1,113 +1,42 @@
-# Kpis
+---
+tags:
+  - product
+  - ai-audit
+  - kpis
+  - metrics
+summary: "KPIs: KI-System Audit & Compliance Platform Success Metrics"
+read_when:
+  - "Quarterly business reviews"
+  - "Investor updates"
+  - "Product performance analysis"
+---
 
-## Overview
+# KPIs: KI-System Audit & Compliance Platform
 
-This ai engineering covers kpis for production use.
+## Business KPIs
 
-## Implementation
+| KPI | Definition | Ziel | Messung |
+|-----|-----------|------|---------|
+| ARR | Annual Recurring Revenue | €500k Year 1 | Stripe + Contracts |
+| MRR Growth | Month-over-Month | >10% | (MRR_t - MRR_t-1) / MRR_t-1 |
+| NRR | Net Revenue Retention | >120% | (MRR_start + Expansion - Churn) / MRR_start |
+| CAC | Customer Acquisition Cost | <€5.000 | Marketing + Sales / New Customers |
+| LTV | Lifetime Value | >€50.000 | ARPU × Gross Margin × Lifetime (months) |
 
-### Setup
+## Product KPIs
 
-```bash
-# Installation and configuration
-npm install relevant-package
-```
+| KPI | Definition | Ziel | Messung |
+|-----|-----------|------|---------|
+| MAU | Monthly Active Users | >500 | Workspace-Members mit Login letzte 30d |
+| WAU/MAU | Ratio of Weekly to Monthly Actives | >60% | Stickiness |
+| Time-to-Value | Zeit bis erstem erfolgreichem Use | <1 Stunde | Onboarding-Analytics |
+| Feature Adoption | % Nutzer, die Feature X mindestens 1x/Woche nutzen | >40% | PostHog Feature Flags |
 
-### Core Implementation
+## Technical KPIs
 
-```typescript
-// Example TypeScript implementation
-export async function kpis_handler() {
-  // Implementation
-}
-```
-
-### Error Handling
-
-```typescript
-try {
-  const result = await kpis_handler();
-  return result;
-} catch (error) {
-  console.error('Kpis error:', error);
-  throw error;
-}
-```
-
-## Best Practices
-
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
-
-## Code Examples
-
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
-
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
-
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Kpis', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+| KPI | Definition | Ziel | Messung |
+|-----|-----------|------|---------|
+| Uptime | Verfügbarkeit | >99.9% | Pingdom / UptimeRobot |
+| p95 Latency | API Response Time | <500ms | APM (OpenTelemetry) |
+| Error Rate | 5xx Errors / Total Requests | <0.5% | API Gateway Logs |
+| MTTR | Mean Time To Recovery | <30min | Incident-Tracking |

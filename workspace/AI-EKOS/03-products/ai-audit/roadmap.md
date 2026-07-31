@@ -1,113 +1,37 @@
-# Roadmap
+---
+tags:
+  - product
+  - ai-audit
+  - roadmap
+  - planning
+summary: "Roadmap: KI-System Audit & Compliance Platform Feature-Planung"
+read_when:
+  - "Sprint planning for ai-audit"
+  - "Quarterly OKRs"
+  - "Stakeholder updates"
+---
 
-## Overview
+# Roadmap: KI-System Audit & Compliance Platform
 
-This ai engineering covers roadmap for production use.
+## Phase 1: MVP (Q3 2026)
 
-## Implementation
+- [ ] Core ai-audit Functionality
+- [ ] Basic UI (React Components)
+- [ ] API (CRUD Operations)
+- [ ] Auth (Email/Password + API Keys)
+- [ ] 3 Integrationen: document-parse, risk-classify, compliance-check
 
-### Setup
+## Phase 2: Beta (Q4 2026)
 
-```bash
-# Installation and configuration
-npm install relevant-package
-```
+- [ ] Erweiterte Features auf Basis von Phase-1 Feedback
+- [ ] Performance-Optimierung (DB Indexing, Caching)
+- [ ] Webhooks für externe Integrationen
+- [ ] Team-Collaboration (Workspaces, Permissions)
+- [ ] Marketplace für ai-audit-spezifische Customizations
 
-### Core Implementation
+## Phase 3: GA (Q1 2027)
 
-```typescript
-// Example TypeScript implementation
-export async function roadmap_handler() {
-  // Implementation
-}
-```
-
-### Error Handling
-
-```typescript
-try {
-  const result = await roadmap_handler();
-  return result;
-} catch (error) {
-  console.error('Roadmap error:', error);
-  throw error;
-}
-```
-
-## Best Practices
-
-1. **Practice 1**: Description and rationale
-2. **Practice 2**: Description and rationale  
-3. **Practice 3**: Description and rationale
-
-## Code Examples
-
-### Basic Usage
-```typescript
-// Basic implementation
-const basic = 'example';
-```
-
-### Advanced Usage
-```typescript
-// Advanced implementation
-const advanced = 'example';
-```
-
-## Testing
-
-```typescript
-import { describe, it, expect } from 'vitest';
-
-describe('Roadmap', () => {
-  it('should work correctly', () => {
-    // Test implementation
-    expect(true).toBe(true);
-  });
-});
-```
-
-## Anti-Patterns
-
-- **Anti-pattern 1**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-- **Anti-pattern 2**: Description of what to avoid
-  - **Why it's bad**: Explanation of the problem
-  - **Better approach**: Correct implementation pattern
-
-## Performance Considerations
-
-- Consideration 1: Impact and mitigation strategy
-- Consideration 2: Impact and mitigation strategy
-
-## Security Considerations
-
-- Consideration 1: Risk and mitigation strategy
-- Consideration 2: Risk and mitigation strategy
-
-## Monitoring
-
-```typescript
-// Monitoring example
-const metrics = {
-  latency: Date.now() - startTime,
-  errors: errorCount,
-  throughput: requestCount,
-};
-```
-
-## Troubleshooting
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Issue 1 | Root cause 1 | Fix 1 |
-| Issue 2 | Root cause 2 | Fix 2 |
-
-## Related
-
-- `05-execution/checklists/code-review.md` — Code review checklist
-- `05-execution/checklists/security.md` — Security checklist
-- `07-patterns/` — Relevant design patterns
-- `04-playbooks/` — Operational playbooks
+- [ ] Enterprise Features: SSO (SAML, OIDC), Audit Logs, Custom Roles
+- [ ] On-Prem Deployment Option (Docker Compose)
+- [ ] Compliance Package: EU AI Act Dokumentation, GDPR DPA
+- [ ] SLA: 99.9% Uptime mit Support-Bereitschaft
