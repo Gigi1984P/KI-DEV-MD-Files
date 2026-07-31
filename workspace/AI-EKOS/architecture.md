@@ -1,3 +1,7 @@
+---
+summary: "Generische Architektur-Referenz für AI-EKOS"
+---
+
 # Architecture
 
 ## Overview

@@ -1,3 +1,7 @@
+---
+summary: "Projektübersicht und Status"
+---
+
 # AI-EKOS Project Summary
 
 ## What Was Built

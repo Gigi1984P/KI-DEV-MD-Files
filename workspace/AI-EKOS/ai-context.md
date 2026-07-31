@@ -1,3 +1,7 @@
+---
+summary: "AI Kontext und Agent-Konfiguration"
+---
+
 # AI Context
 
 ## AI Engineering Knowledge Operating System (AI-EKOS)
