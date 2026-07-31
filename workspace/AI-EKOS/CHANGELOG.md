@@ -1,3 +1,27 @@
+
+## [2026-07-31]
+
+### Added
+- YAML frontmatter für alle wesentlichen Dateien (tags, summary, read_when)
+- GitHub Actions Workflow: Automatische MANIFEST.md Regenerierung
+- Echte produktspezifische Dokumentation für 6 Produkte in 03-products/
+- Frontend: kebab-case Konvention durchgesetzt (259 Dateien umbenannt)
+
+### Changed
+- Workspace-Struktur reorganisiert: projects/ (plantone-website, ki-agent)
+- AI-CTO-OS/ archiviert nach archive/AI-CTO-OS-deprecated/
+- Jahreszahlen von 2024 → 2026 in technischen Dokumenten aktualisiert
+
+### Removed
+- httpdocs/ Duplikat (416 Dateien entfernt)
+- 82 generische Pattern-Dateien in 07-patterns/
+- 173 leere Dateien im archive/
+- test-ai-ekos/ und backups/ temporäre Verzeichnisse
+- 36 generische Template-Dateien in 03-products/ (vision.md, api.md, etc.)
+
+### Fixed
+- Broken internal links in 05-execution/examples/ korrigiert
+
 # Changelog
 
 ## Overview
